@@ -10,8 +10,8 @@ const Feed = () => {
 
 
     useEffect(() => {
-    fetchFromAPI(`related?part=snippet&q=${selectedCategory}`).then((data) => setVideos(data.items))
-    }, [selectedCategory]);
+    fetchFromAPI(`related`).then((data) => setVideos(data.items))
+    }, []);
 
     return (
         <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
