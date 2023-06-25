@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { Videos, ChannelCard } from "./";
 import { fetchFromAPI } from "../utils/fetchFromAPi";
 import { bgkaela } from "../utils/constants";
-
+import bgkaela from '../utils/bg-kaela.png'
 
 const ChannelDetail = () => {
     const [channelDetail, setChannelDetail] = useState(null);
@@ -24,14 +24,14 @@ const ChannelDetail = () => {
     return (
         <Box minHeight="95vh">
             <Box>
-                {/* <div
+                <div
                     style={{
-                        background:bgkaela,
+                        backgroundImage: bgkaela,
                         zIndex: 10,
                         height: "300px",
-                    }} */}
+                    }}
 
-                {/* /> */}
+                 /> 
                 <ChannelCard channelDetail={channelDetail} marginTop="-110px" />
             </Box>
             <Box display="flex" p="2">
